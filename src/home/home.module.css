@@ -1,0 +1,22 @@
+.home{
+    position: relative;
+}
+
+.light_shade{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #00000000;
+    transition: all .4s linear;
+    pointer-events: none;
+}
+
+.dark_shade{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #00000090;
+    transition: all .4s linear;
+}
