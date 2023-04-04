@@ -42,7 +42,7 @@ const Catalogue = () => {
         }
     ]
     return(
-        <section>
+        <section className={styles.catalogue_section}>
             <h2>Zovqə uygun</h2>
             <div className={styles.catalog_grid}>
                 {

@@ -51,6 +51,8 @@ ul li{
 }   
 
 footer{
+    position: absolute;
+    bottom: 0;
     padding: 55px 20px;
     font-size: .8em;
     font-weight: 300;

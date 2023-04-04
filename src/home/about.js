@@ -5,6 +5,7 @@ import styles from './home.module.css';
 const About = () => {
     return(
         <section className={styles.about_us}>
+            <h2>Haqqimizda</h2>
             <div className={styles.about_img}></div>
             <div className={styles.about_list}>
                 <div className={styles.list_container}>
