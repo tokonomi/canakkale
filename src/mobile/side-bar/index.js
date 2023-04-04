@@ -12,7 +12,7 @@ const SideBar = ({setSideBar, sideBar}) => {
                 <img src={close_ico} alt='' onClick={() => {setSideBar(false)}}/>
                 <h3>Menu</h3>
             </header>
-            <ul>
+            <ul className={styles.side_bar}>
                 <li className={styles.item_title}>
                     <h6>Haqqimizda</h6>
                     <p>Tarixçə</p>

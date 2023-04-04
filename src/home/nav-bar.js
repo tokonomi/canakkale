@@ -1,14 +1,14 @@
 import React from "react";
 
 
-import styles from './nav-bar.module.css';
+import styles from './home.module.css';
 
-import logo from '../../assets/logo-mobile.png';
-import burger from '../../assets/icons/burger.svg';
+import logo from '../assets/logo-mobile.png';
+import burger from '../assets/icons/burger.svg';
 
 const NavBar = ({sideBar, setSideBar}) => {
     return(
-        <div>
+        <div className={styles.navigation_block}>
             <nav>
                 <img className={styles.logo} src={logo} alt = ''/>
                 <img className={styles.burger_ico} src={burger} onClick={() => setSideBar(true)} alt=""/>

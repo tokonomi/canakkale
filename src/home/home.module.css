@@ -1,4 +1,5 @@
 .home{
+    overflow: hidden;
     position: relative;
 }
 
@@ -19,4 +20,120 @@
     width: 100%;
     background-color: #00000090;
     transition: all .4s linear;
+    z-index: 1;
+    overflow-y: hidden;
+}
+/* NAV BAR */
+.navigation_block{
+    display: block;
+    height: 60px;
+}
+nav{
+    z-index: 3;
+    width: 100%; 
+    /* box-shadow: -1px 7px 24px 0px rgba(0, 0, 0, 0.089); */
+    border-radius: 0 0 10px 10px;
+    background-color: aliceblue;
+
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.logo{
+    height: 30px;
+}
+
+
+/* COLLECTIONS */
+
+.images li{
+    height: 35vh;
+}
+
+.collections_section{
+    padding: 10px 20px;
+}
+
+.collections_section h3{
+    font-weight: 300;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.images{
+    list-style-type: none;
+}
+
+.images li{
+    border-radius: 8px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.images li:last-child{
+    margin-bottom: 0;
+}
+
+.images li h2{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px 25px;
+    background-color: #AAC7FF;
+    border-radius: 0 0 8px 0;
+}
+
+/* CATALOGUES */
+
+.catalog_grid{
+    display: grid;
+}
+
+.catalog_grid item2{
+    height: 200px;
+}
+
+.item{
+    height: 240px;
+    background-color: #000000;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.item:last-child{
+    margin-bottom: 0;
+}
+
+.item h3{
+    position: absolute;
+    bottom: 25px;
+    background-color: #4B5B7280;
+    padding: 10px 15px 10px 20px;
+    border-radius: 0 15px 15px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* ABOUT  */
+
+.list_container div{
+    padding: 15px 10px;
+    min-height: 150px;
+    border-bottom: 1px solid #00000020;
+}
+
+.list_container:last-child div:last-child{
+    border-bottom: 0;
+}
+
+.list_container h3{
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.list_container p{
+    font-size: .9em;
+    font-weight: 300;
 }
