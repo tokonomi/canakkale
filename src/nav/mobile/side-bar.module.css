@@ -3,7 +3,7 @@
     color: #fff;
     width: 80%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -80%;
     transition: all .4s ease-in;
@@ -14,11 +14,12 @@
     color: #fff;
     width: 80%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     transition: all .4s ease-in;
     z-index: 10;
+    overflow-y: hidden!important;
 }
 
 header{
@@ -50,7 +51,7 @@ ul li{
     font-size: .5em;
 }   
 
-footer{
+.footer{
     position: absolute;
     bottom: 0;
     padding: 55px 20px;

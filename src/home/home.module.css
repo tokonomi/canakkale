@@ -1,9 +1,9 @@
 .home{
-    overflow: hidden;
     position: relative;
 }
 
 .to_top{
+    display: block;
     position: fixed;
     z-index: 2;
     bottom: 20px;
@@ -15,54 +15,13 @@
 }
 
 .to_top img{
-    position: relative;
-    left: 0;
-    bottom: 0;
-}
-
-
-.light_shade{
     position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: #00000000;
-    transition: all 1s linear;
-    pointer-events: none;
-    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.dark_shade{
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: #00000090;
-    transition: all .4s linear;
-    z-index: 5;
-    overflow-y: hidden;
-}
-/* NAV BAR */
-.navigation_block{
-    display: block;
-    height: 60px;
-}
-nav{
-    z-index: 3;
-    width: 100%; 
-    /* box-shadow: -1px 7px 24px 0px rgba(0, 0, 0, 0.089); */
-    border-radius: 0 0 10px 10px;
-    background-color: aliceblue;
 
-    padding: 15px 10px;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-}
-
-.logo{
-    height: 30px;
-}
 
 
 /* COLLECTIONS */

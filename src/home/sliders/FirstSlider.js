@@ -14,7 +14,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 const FirstSlider = () => {
     return(
-            <div className={styles.slider_one}>
+            <div id="to_top" className={styles.slider_one}>
                 <Swiper
                     spaceBetween={0}
                     centeredSlides={true}

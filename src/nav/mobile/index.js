@@ -32,7 +32,7 @@ const SideBar = ({setSideBar, sideBar}) => {
                 <li>Partnyorlar</li>
                 <li>Proyektlər</li>
             </ul>
-            <footer>
+            <footer className={styles.footer}>
                 <p>T:+994 55 211 01 12</p>
                 <p>T:+994 55 211 01 12</p>
                 <p><img src={location}/>28 may, Khatai</p>

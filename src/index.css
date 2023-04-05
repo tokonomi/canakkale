@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Rubik, sans-serif;
+  scroll-behavior: smooth;
+}
+.app_screen{
+  position: relative;
 }
 .swiper {
   width: 100%;
@@ -26,3 +30,29 @@
   height: 100%;
   object-fit: cover;
 }
+
+.light_shade{
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #00000000;
+  transition: all 1s linear;
+  pointer-events: none;
+  z-index: 5;
+  position: fixed;
+}
+
+.dark_shade{
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #00000090;
+  transition: all .4s linear;
+  z-index: 5;
+  overflow-y: hidden;
+  position: fixed;
+}
+
+

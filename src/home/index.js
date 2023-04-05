@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import NavBar from "./nav-bar";
-import SideBar from "../mobile/side-bar";
+import NavBar from "../nav/nav-bar";
+import SideBar from "../nav/mobile";
 import Collection from "./collections";
 import FirstSlider from "./sliders/FirstSlider";
 import Catalogue from "./catalogue";
@@ -11,17 +11,12 @@ import styles from "./home.module.css";
 
 import to_top from "../assets/icons/to-top.svg";
 
-const Home = () => {
-    const [sideBar, setSideBar] = useState(false);
+const Home = ({sideBar}) => {
     return(
-        <div className={styles.home} style={{height: sideBar ? '100vh' : 'inherit'}}>
-            <div className={styles.to_top}></div>
-            <div className={sideBar ? styles.dark_shade : styles.light_shade}>
+        <div className={styles.home}>
+            <a href="#to_top" className={styles.to_top}>
                 <img src={to_top}/>
-            </div>
-            <SideBar setSideBar={setSideBar} sideBar={sideBar}/> 
-
-            <NavBar sideBar={sideBar} setSideBar={setSideBar}/>
+            </a>
             <FirstSlider/>
             <Collection/>
             <Catalogue/>
