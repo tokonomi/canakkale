@@ -3,7 +3,7 @@ import React from "react";
 import logo_mobile from '../assets/logo-mobile.png';
 import logo from '../assets/logo.png';
 import burger from '../assets/icons/burger.svg';
-import home_ico from '../assets/icons/home.svg';
+import home from '../assets/icons/home.svg'
 import about_ico from '../assets/icons/about-us.svg';
 import products_ico from '../assets/icons/products.svg';
 import portfolio_ico from '../assets/icons/portfolio.svg';
@@ -19,7 +19,7 @@ const NavBar = ({sideBar, setSideBar}) => {
                 <ul className={styles.menu_list}>
                     <div>
                         <li>
-                            <img src={home_ico}/>
+                            <img src={home}/>
                             <p>Home</p>
                         </li>
                         <li>

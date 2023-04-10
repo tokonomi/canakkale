@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Rubik, sans-serif;
   scroll-behavior: smooth;
+  transition: .6s all ease-in-out;
 }
 .app_screen{
   position: relative;
@@ -11,6 +12,13 @@
 .swiper {
   width: 100%;
   height: 100%;
+}
+
+.swiper-button-next{
+  color: black!important;
+}
+.swiper-button-prev{
+  color: black!important;
 }
 
 .swiper-slide {

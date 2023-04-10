@@ -23,19 +23,35 @@ const FirstSlider = () => {
                     disableOnInteraction: false,
                     }}
                     pagination={false}
-                    navigation={false}
+                    navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper"
+                    className={styles.mySwiper_mobile}
                 >
-                    <SwiperSlide style={{backgroundColor: `rgb(${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)})`}}>Slide 1</SwiperSlide>
-                    <SwiperSlide style={{backgroundColor: `rgb(${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)})`}}>Slide 2</SwiperSlide>
-                    <SwiperSlide style={{backgroundColor: `rgb(${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)})`}}>Slide 3</SwiperSlide>
-                    <SwiperSlide style={{backgroundColor: `rgb(${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)})`}}>Slide 4</SwiperSlide>
-                    <SwiperSlide style={{backgroundColor: `rgb(${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)})`}}>Slide 5</SwiperSlide>
-                    <SwiperSlide style={{backgroundColor: `rgb(${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)})`}}>Slide 6</SwiperSlide>
-                    <SwiperSlide style={{backgroundColor: `rgb(${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)})`}}>Slide 7</SwiperSlide>
-                    <SwiperSlide style={{backgroundColor: `rgb(${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)})`}}>Slide 8</SwiperSlide>
-                    <SwiperSlide style={{backgroundColor: `rgb(${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)})`}}>Slide 9</SwiperSlide>
+                    <SwiperSlide>
+                        <div style={{backgroundColor: `rgb(${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)})`, height: '100%'}}>
+                            Slider 1
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div style={{backgroundColor: `rgb(${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)})`, height: '100%'}}>
+                            Slider 1
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div style={{backgroundColor: `rgb(${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)})`, height: '100%'}}>
+                            Slider 1
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div style={{backgroundColor: `rgb(${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)})`, height: '100%'}}>
+                            Slider 1
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div style={{backgroundColor: `rgb(${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)})`, height: '100%'}}>
+                            Slider 1
+                        </div>
+                    </SwiperSlide>
                 </Swiper>
             </div>
     )

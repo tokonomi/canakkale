@@ -1,6 +1,10 @@
+
 .navigation_block{
     display: block;
     height: 60px;
+}
+.nav{
+    display: none;
 }
 .nav_mobile{
     z-index: 3;
@@ -34,11 +38,30 @@
     .nav{
         display: grid;
         grid-template-columns: 1fr 2fr;
+        vertical-align: middle;
+        align-items: center;
+        padding: 10px 5px;
+    }
+    .menu_list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        vertical-align: middle;
     }
     .menu_list div{
         display: flex;
         list-style-type: none;
         vertical-align: middle;
         align-items: center;
+    }
+    .menu_list li{
+        max-width: 71px;
+        text-align: center;
+        font-size: .9em;
+        margin-right: 45px;
+    }
+
+    .menu_list div:last-child li{
+        margin: 0;
     }
 }

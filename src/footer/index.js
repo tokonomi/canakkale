@@ -13,7 +13,7 @@ const Footer = () => {
             <ul className={styles.footer_info_list}>
                 <li className={styles.collapsible}>
                     <input type="checkbox" id="collapsible-info"/>
-                    <label for="collapsible-info">Haqqımızda</label>
+                    <label htmlFor="collapsible-info">Haqqımızda</label>
                     <ul className={styles.collapsible_info}>
                         <li>Bizim komandamiz</li>
                         <li>Məhsullar</li>
@@ -21,7 +21,7 @@ const Footer = () => {
                 </li>
                 <li className={styles.collapsible}>
                     <input type="checkbox" id="collapsible-product"/>
-                    <label for="collapsible-product">Məhsul haqqinda</label>
+                    <label htmlFor="collapsible-product">Məhsul haqqinda</label>
                     <ul className={styles.collapsible_info}>
                         <li>Hardan almaq olar?</li>
                         <li>Keyfiyyət sertifikatları</li>
@@ -30,7 +30,7 @@ const Footer = () => {
                 </li>
                 <li className={styles.collapsible}>
                     <input type="checkbox" id="collapsible-production"/>
-                    <label for="collapsible-production">İstehsal</label>
+                    <label htmlFor="collapsible-production">İstehsal</label>
                     <ul className={styles.collapsible_info}>
                         <li>The Primavera</li>
                         <li>The golden tile</li>
@@ -40,7 +40,7 @@ const Footer = () => {
                 </li>
                 <li className={styles.collapsible}>
                     <input type="checkbox" id="collapsible-contacts"/>
-                    <label for="collapsible-contacts">Elaqə</label>
+                    <label htmlFor="collapsible-contacts">Elaqə</label>
                     <ul className={styles.collapsible_info}>
                         <li>Ünvan: Azerbaijan, 03214, Baku, Khatai K. 55</li>
                         <li>Telefon: +994 55 123 45 67</li>

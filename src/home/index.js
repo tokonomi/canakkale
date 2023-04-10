@@ -10,6 +10,7 @@ import About from "./about";
 import styles from "./home.module.css";
 
 import to_top from "../assets/icons/to-top.svg";
+import SecondSlider from "./sliders/SecondSlider";
 
 const Home = ({sideBar}) => {
     return(

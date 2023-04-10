@@ -1,3 +1,105 @@
 .slider_one{
     height: 50vh;
 }
+
+.mySwiper{
+    display: none;
+}
+
+.second_slider{
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    .second_slider{
+        display: block;
+    }
+
+    /* second slider */
+
+    .slider_blocks{
+        position: relative;
+        overflow: hidden;
+    }
+
+    .block_main{
+        position: relative;
+        width: 350px;
+        height: 400px;
+        background-color: antiquewhite;
+        overflow: hidden;
+    }
+    .secondary_blocks{
+        position: absolute;
+        top: 50%;
+        left: 200px;
+        transform: translateY(-50%);
+        display: flex;
+    }
+    .block_secondary{
+        width: 300px;
+        height: 300px;
+        background-color: aliceblue;
+        margin-right: 40px;
+    }
+
+    .navigation_bar{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigation_bar div{
+        width: 70px;
+        height: 70px;
+        background-color: aliceblue;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+    }
+    .navigation_bar div:first-child::after{
+        content: '';
+        display: inline-block;
+        background: url(../../assets/icons/to-top.svg) no-repeat;
+        width: 26px;
+        height: 15px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+    }
+    .navigation_bar div:last-child::after{
+        content: '';
+        display: inline-block;
+        background: url(../../assets/icons/to-top.svg) no-repeat ;
+        width: 26px;
+        height: 15px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    .inside_block{
+        position: absolute;
+        width: 350px;
+        height: 100%;
+        background-color:antiquewhite;
+        display: flex;
+        left: 0;
+        transition: all .6s ease-in;
+    }
+
+    .main_inside{
+        width: 350px;
+        position: absolute;
+        background-color: azure;
+    }
+
+
+    .secondary_blocks{
+        overflow: hidden;
+    }
+}

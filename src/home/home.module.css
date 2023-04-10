@@ -126,3 +126,9 @@
     font-size: .9em;
     font-weight: 300;
 }
+
+@media only screen and (min-width: 768px) {
+    .collections_section{
+        display: none;
+    }
+}

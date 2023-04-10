@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "./home.module.css";
+import SecondSlider from "./sliders/SecondSlider";
 
 const Collection = () => {
     const collectionData = [
@@ -95,6 +96,7 @@ const Collection = () => {
     ]
     return(
         <div>
+            <SecondSlider collectionData={collectionData}/>
             {
                 collectionData.map((element, id) => {
                     return(
