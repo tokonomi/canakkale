@@ -4,9 +4,9 @@ import styles from './footer.module.css'
 
 import logo from '../assets/logo.png'
 
-const Footer = () => {
+const Footer = ({footer}) => {
     return(
-        <footer className={styles.footer}>
+        <footer ref={footer} id="footer" className={styles.footer}>
             <div className={styles.footer_img}>
                 <img src={logo}/>
             </div>
@@ -48,7 +48,7 @@ const Footer = () => {
                     </ul>
                 </li>
             </ul>
-            <p>©Copytight 2023</p>
+            <p className={styles.footer_copyright}>©Copytight 2023</p>
         </footer>
     )
 }

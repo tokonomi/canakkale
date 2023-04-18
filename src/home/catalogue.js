@@ -35,10 +35,6 @@ const Catalogue = () => {
         {
             name: 'zimbabwe',
             img: '#858778'
-        },
-        {
-            name: 'outdoor',
-            img: '#958778'
         }
     ]
     return(
@@ -48,7 +44,7 @@ const Catalogue = () => {
                 {
                     catalog_data.map((element, id) => {
                         return(
-                            <div className={styles[`item${id}`] || styles.item} style={{backgroundColor: element.img}} key={id}>
+                            <div className={`${styles[`item${id}`]}  ${styles['item']}`} style={{backgroundColor: element.img}} key={id}>
                                 <h3>{element.name}</h3>
                             </div>
                         )

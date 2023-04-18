@@ -63,3 +63,53 @@
 .footer p{
     text-align: center;
 }
+
+
+@media only screen and (min-width: 768px) {
+    .footer_img img{
+        width: 50%;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .footer{
+        padding-top: 50px;
+    }
+    .footer_img{
+        display: flex;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .footer_img img{
+        width: 200px;
+        margin: inherit;
+    }
+    .footer_img::after{
+        content: '';
+        display: inline-block;
+        width: 65%;
+        height: 1px;
+        border-bottom: 1px solid #00000020;
+        margin-left: 5%;
+    }
+    .collapsible_info{
+        max-height: 200px;
+        opacity: 1;
+        top: 0;
+    }
+    .footer_info_list{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+        
+    .collapsible label::after{
+        display: none;
+    }
+    .collapsible label{
+        border: 0;
+    }
+    .footer_copyright{
+        padding-top: 20px;
+    }
+}

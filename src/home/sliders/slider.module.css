@@ -2,16 +2,24 @@
     height: 50vh;
 }
 
+.slider_two_desktop{
+    display: none;
+}
+
 .mySwiper{
     display: none;
 }
 
 .second_slider{
     display: none;
+    padding: 80px 0;
+    background: url(../../assets/second-slider-bg.jpg) 0 0 no-repeat ;
 }
 @media only screen and (min-width: 768px) {
     .second_slider{
         display: block;
+        overflow: hidden;
+        padding-left: 10px;
     }
 
     /* second slider */
@@ -89,7 +97,7 @@
         background-color:antiquewhite;
         display: flex;
         left: 0;
-        transition: all .6s ease-in;
+        transition: all .4s ease-in;
     }
 
     .main_inside{
@@ -101,5 +109,52 @@
 
     .secondary_blocks{
         overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .slider_one{
+        display: none;
+    }
+    .slider_two_desktop{
+        height: 50vh;
+        display: block;
+    }
+    .desktop_inner_block{
+        display: flex!important;
+        justify-content: space-between;
+        
+    }
+    .second_slider{
+        padding: 120px 0;
+        background-position: 0 -100px;
+    }
+    .title{
+        padding-bottom: 15px;
+        font-weight: 400;
+        font-size: 2em;
+    }
+    .slider_blocks{
+        max-width: 1170px;
+        overflow: visible;
+        margin: 0 auto;
+    }
+    .block_main{
+        width: 450px;
+        height: 500px;
+    }
+    
+    .main_inside{
+        width: 450px;
+    }
+
+    .block_secondary{
+        width: 400px;
+        height: 370px;
+    }
+    .secondary_blocks{
+        position: absolute;
+        top: 55%;
+        left: 300px;
     }
 }

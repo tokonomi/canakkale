@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import NavBar from "../nav/nav-bar";
 import SideBar from "../nav/mobile";
@@ -12,16 +12,15 @@ import styles from "./home.module.css";
 import to_top from "../assets/icons/to-top.svg";
 import SecondSlider from "./sliders/SecondSlider";
 
-const Home = ({sideBar}) => {
+const Home = ({to_top_btn, footer}) => {
     return(
         <div className={styles.home}>
-            <a href="#to_top" className={styles.to_top}>
-                <img src={to_top}/>
-            </a>
             <FirstSlider/>
             <Collection/>
-            <Catalogue/>
-            <About/>
+            <div id="social-float" className={styles.container}>
+                <Catalogue/>
+                <About/>
+            </div>
         </div>
     )
 }
