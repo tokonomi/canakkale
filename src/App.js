@@ -6,6 +6,7 @@ import SideBar from "./nav/mobile";
 import Catalog from "./catalog";
 
 import to_top from "./assets/icons/to-top.svg";
+import Portfolio from "./portfolio";
 
 function App() {
   const [sideBar, setSideBar] = useState(false);
@@ -35,8 +36,9 @@ window.addEventListener("scroll", function(){
       <div className={sideBar ? 'dark_shade' : 'light_shade'}></div>
       <SideBar setSideBar={setSideBar} sideBar={sideBar}/> 
       <NavBar sideBar={sideBar} setSideBar={setSideBar}/>
-      <Home footer={footer} to_top_btn={to_top_btn} sideBar={sideBar} setSideBar={setSideBar}/>
+      {/* <Home footer={footer} to_top_btn={to_top_btn} sideBar={sideBar} setSideBar={setSideBar}/> */}
       {/* <Catalog/> */}
+      <Portfolio/>
       <Footer footer={footer}/>
     </div> 
   );
