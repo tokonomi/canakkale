@@ -1,9 +1,17 @@
 .portfolio{
-    padding: 0 10px;
     color: #393939;
 }
+.portfolio h3{
+    font-size: 1.6em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 50px 0 20px 0;
+}
+
+/* PARTNERS */
 
 .partners{
+    padding: 0 10px;
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 20px;
@@ -27,12 +35,6 @@
     right: 0;
 }
 
-.partners h3{
-    font-size: 1.6em;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin: 50px 0 20px 0;
-}
 
 .partners_header{
     display: flex;
@@ -67,8 +69,8 @@
     text-align: center;
 }
 .mySwiper {
-    width: 300px;
-    height: 300px;
+    max-width: 250px;
+    height: 250px;
     padding: 20px;
 }
 
@@ -82,4 +84,233 @@
 .mySwiper .swiper-slide img {
     display: block;
     width: 100%;
+}
+
+/* BRANDS */
+
+.brands{
+    padding: 0 10px;
+    padding-bottom: 70px;
+}
+
+.brand_caption{
+    /* width: 200px!important; */
+}
+
+figcaption{
+  background: black url('https://plus.unsplash.com/premium_photo-1661944207827-45fc033c4e36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80') no-repeat fixed center!important;
+}
+
+figcaption::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+}
+
+.brand_info{
+    z-index: 1;
+}
+
+.brand_info img{
+    margin-top: 50px;
+}
+
+.brand_block{
+    max-height: 300px;
+    max-width: 490px;
+    margin: 10px 0;
+}
+
+.brand_bg{
+    height: 100%;
+}
+
+.brand_title{
+    transform: translateY(-20px);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.brand_about{
+    font-weight: 300;
+    font-size: .6em;
+}
+
+/* PROJECTS */
+
+.projects{
+    padding-bottom: 70px;
+}
+
+
+.project_header::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00000080;
+}
+.project_header{
+    position: relative;
+    height: 40vh;
+    background: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) no-repeat;
+    background-size: cover;
+}
+.project_header h1{
+    font-weight: 400;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.projects_list{
+    padding: 25px 10px;
+}
+
+.project_item img{
+    height: 35vh;
+    width: 100%;
+    transition: all .5s cubic-bezier(1,-0.99,.14,1.8);
+    outline: solid 0px white;
+}
+
+
+.project_item img:hover{
+    outline: solid 2rem white;
+    outline-offset: -2rem;
+    cursor: pointer;
+}
+
+.project_item h3{
+    margin: 0;
+    font-size: .9em;
+    font-weight: 500;
+}
+
+.item_title{
+    padding: 5px 0;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .features{
+        display: flex;
+    }
+    .features::after{
+        left: 0;
+        bottom: -30px;
+    }
+    .partners_blocks{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .mySwiper {
+        padding: 10px;
+        width: 180px;
+        height: 180px;
+    }
+    .brand_block{
+        max-width: 360px;
+    }
+    .brands_blocks{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .projects_list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .partners_header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        padding: 20px 0;
+    }
+    .partners_header_img{
+        height: 100%;
+    }
+    .brands_blocks{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .brand_block{
+        margin: 0;
+        max-width: 600px;
+    }
+    .brand_info{
+        width: 100%;
+    }
+    .brands{
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+    .projects{
+        padding-bottom: 0;
+    }
+}
+@media only screen and (min-width: 1170px) {
+    .partners_header{
+        height: 60vh;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: space-around;
+        grid-column-gap: 100px;
+    }
+    .partners_header_img{
+        margin: 0;
+    }
+    .partners_header_text{
+        font-size: 1.6em;
+    }
+    .features{
+        padding: 50px 0;
+        justify-content: space-around;
+    }
+    .mySwiper {
+        width: 220px;
+        height: 220px;
+    }
+    .brands_blocks{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .brand_block{
+        max-width: 370px;
+        max-height: none;
+        height: 600px;
+    }
+    .brand_title{
+        font-size: 1.3em;
+    }
+    .brand_about{
+        font-size: .9em;
+    }
+    .projects_list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .project_item{
+        max-width: 400px;
+        width: 100%;
+    }
+    .project_item img{
+        height: 45vh;
+    }
 }

@@ -1,0 +1,26 @@
+.collections_block{
+    margin: 15px 0;
+}
+
+.items{
+    border-radius: 5px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    background-color:rgb(201, 201, 201);
+}
+
+.items button{
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+
+.items button:first-child{
+    margin-right: 10px;
+}

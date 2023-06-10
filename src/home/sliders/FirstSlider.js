@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+  
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,34 +11,33 @@ import styles from "./slider.module.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
+import axios from "axios";
 
 const FirstSlider = () => {
-    const slider = [
-        {
-            title: 'Slider 1'
-        },
-        {
-            title: 'Slider 2'
-        },
-        {
-            title: 'Slider 3'
-        },
-        {
-            title: 'Slider 4'
-        },
-        {
-            title: 'Slider 5'
-        },
-        {
-            title: 'Slider 6'
+    let [sliderImg, setImgSlider] = useState([])
+    let [loaded, setLoaded] = useState(false)
+    useEffect(() => {
+        async function getImages(){
+            try{
+                const response = await axios.get('http://localhost:5500/api/folder-data/Slider')
+                setImgSlider(response.data)
+                setTimeout(() => {setLoaded(true)}, 5000)
+            }catch(err){
+                console.log(err)
+            }
         }
-    ]
+
+        getImages()
+    }, [])
     let desktop_slider = []
-    for(let i = 0; i < slider.length; i++) {
+    for(let i = 0; i < sliderImg.length; i++) {
         let arr = [];
-        arr.push(slider[i], slider[i+1])
+        arr.push(sliderImg[i], sliderImg[i+1])
         i += 1
         desktop_slider.push(arr);
+    }
+    if(!loaded){
+        return <div>Loading...</div>
     }
     return(
             <>
@@ -56,11 +55,11 @@ const FirstSlider = () => {
                     className={styles.mySwiper_mobile}
                     >
                         {
-                            slider.map((item, id) => {
+                            sliderImg.map((item, id) => {
                                 return(
                                     <SwiperSlide key={id}>
-                                        <div style={{backgroundColor: `rgb(${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)}, ${Math.floor(Math.random() * 101)})`, height: '100%'}}>
-                                            {item.title}
+                                        <div style={{ backgroundImage: `url("http://localhost:5500/api/image-data/Slider/${item}") `, height: '100%', backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: "100%"}}>
+                                            asd
                                         </div>
                                     </SwiperSlide>
                                 )
@@ -89,8 +88,8 @@ const FirstSlider = () => {
                                         {
                                             item.map((item2, id2) => {
                                                 return(
-                                                    <div key={id2} style={{backgroundColor: `rgb(${Math.floor(Math.random() * 251)}, ${Math.floor(Math.random() * 251)}, ${Math.floor(Math.random() * 251)})`, height: '100%', width: '49.95%'}}>
-                                                        {item2.title}
+                                                    <div key={id2} style={{ backgroundImage: `url("http://localhost:5500/api/image-data/Slider/${item2}") `, height: '100%', backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: '100%', width: '49.95%'}}>
+                                                        {item2}
                                                     </div>
                                                 )
                                             })

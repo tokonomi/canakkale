@@ -10,6 +10,7 @@ import portfolio_ico from '../assets/icons/portfolio.svg';
 import catalog_ico from '../assets/icons/catalog.svg';
 
 import styles from './nav.module.css';
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const NavBar = ({sideBar, setSideBar}) => {
     return(
@@ -20,16 +21,18 @@ const NavBar = ({sideBar, setSideBar}) => {
                 <ul className={styles.menu_list}>
                     <div className={styles.mid_nav}>
                         <li>
+                            <Link to="/">
                             <img src={home}/>
                             <p>Home</p>
+                            </Link>
                         </li>
                         <li className={styles.dropdown_hover1}>
                             <img src={about_ico}/>
                             <p>About us</p>
                             <ul className={`${styles.dropdown1} ${styles.dropdown}`}>
-                                <li>Tarixce</li>
-                                <li>CK Showroom</li>
-                                <li>Kale Showroom</li>
+                                <li><Link to="/tarix">Tarixce</Link></li>
+                                <li><Link to="/ck-showroom">CK Showroom</Link></li>
+                                <li><Link to="/k-showroom">Kale Showroom</Link></li>
                             </ul>
                         </li>
                         <li className={styles.dropdown_hover2}>
@@ -55,9 +58,9 @@ const NavBar = ({sideBar, setSideBar}) => {
                                 </li>
                                 <li className={styles.right_s_dd}>
                                     <ul>
-                                        <li>Brendler</li>
-                                        <li>Partnyorlar</li>
-                                        <li>Proyektler</li>
+                                        <li><Link to="/portfolio">Brendler</Link></li>
+                                        <li><Link to="/portfolio">Partnyorlar</Link></li>
+                                        <li><Link to="/portfolio">Proyektler</Link></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -65,8 +68,10 @@ const NavBar = ({sideBar, setSideBar}) => {
                     </div>
                     <div>
                         <li>
-                            <img src={catalog_ico}/>
-                            <p>Catalog</p>
+                            <Link to="/katalog">
+                                <img src={catalog_ico}/>
+                                <p>Catalog</p>
+                            </Link>
                         </li>
                     </div>
                 </ul>

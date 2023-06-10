@@ -276,6 +276,38 @@
     }
 }
 
+/* PRODUCT */
+
+.product_img{
+    height: 50vh;
+    background-color: antiquewhite;
+}
+
+.product_info{
+    padding: 15px 5px;
+}
+
+.product_info h1{
+    font-weight: 300;
+}
+
+.product_adv{
+    display: flex;
+    flex-direction: column;
+}
+
+.the_cover{
+    padding-top: 10px;
+}
+
+.the_cover > div{
+    padding-bottom: 10px;
+}
+.the_cover > div h4{
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
 @media only screen and (min-width: 1024px) {
     .items{
         grid-template-columns: 1fr 1fr 1fr;

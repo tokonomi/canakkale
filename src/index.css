@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
   transition: .3s all ease-in-out;
 }
+a{
+  color: black;
+  text-decoration: none;
+}
 .app_screen{
   position: relative;
 }
@@ -30,6 +34,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{
+  background-color: bisque;
 }
 
 .swiper-slide img {

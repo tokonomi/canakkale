@@ -42,9 +42,14 @@ const Footer = ({footer}) => {
                     <input type="checkbox" id="collapsible-contacts"/>
                     <label htmlFor="collapsible-contacts">Elaqə</label>
                     <ul className={styles.collapsible_info}>
-                        <li>Ünvan: Azerbaijan, 03214, Baku, Khatai K. 55</li>
-                        <li>Telefon: +994 55 123 45 67</li>
-                        <li>Email: info@canakkale.com</li>
+                        <li><b>Ünvan: </b></li>
+                        <li>Xətai pr. 43, Baku, Azerbaijan, AZ1008</li>
+                        <li>Xətai pr. 158, Baku, Azerbaijan, AZ1008</li>
+                        <li><b>Telefon:</b> </li>
+                        <li>(+994 55) 808 03 93</li>
+                        <li>(+994 50) 544 25 35</li>
+                        <li><b>Email: </b></li>
+                        <li>office@canaqqalaseramik.az</li>
                     </ul>
                 </li>
             </ul>
